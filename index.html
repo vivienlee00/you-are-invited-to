@@ -18,11 +18,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body onload="">
+<body id="body" onload="">
     <div id="app"></div>
-    <span id="down" class="bounce showMe material-symbols-outlined">
-        south
-    </span>
+    <a onclick="showContent()">
+        <span id="down" class="bounce material-symbols-outlined">
+            south
+        </span>
+    </a>
+    <div id="content">
+        djglk;asfjf giofradhjg iopaersjhrtuioevmuntioetuioretuvmnpioresmutioeutioreswmu
+    </div>
 </body>
 
 <script>
@@ -39,6 +44,12 @@
         .pauseFor(1500)
         .typeString("<br><br><br><strong><span class='text' id='banger'>VIVIEN'S 23rd BIRTHDAY<br>PARTY + SLEEPOVER</span></strong>")
         .start();
+
+    function showContent(){
+        document.getElementById('body').style.minHeight = "200vh";
+        document.getElementById('content').style.display = "block";
+        document.getElementById('content').scrollIntoView();
+    }
 </script>
 
 </html>
