@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <link href="style.css" rel="stylesheet" />
-</head>
-<body>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>
-  </script>
+<head>
+    <meta charset="utf-8">
+    <title>VIVIEN'S 23RD BIRTHDAY</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="snowstorm.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="">
+    <div id="app"></div>
+    <span id="down" class="bounce showMe material-symbols-outlined">
+        south
+    </span>
 </body>
+
+<script>
+    var app = document.getElementById('app');
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: 100,
+    });
+    typewriter
+        .pauseFor(300)
+        .typeString('<span class="text" id="welcome">welcome ! ... ♥</span>')
+        .pauseFor(1000)
+        .typeString('<br><br><br><span class="text" id="cordially">you are cordially invited to ...</span>')
+        .pauseFor(1500)
+        .typeString("<br><br><br><strong><span class='text' id='banger'>VIVIEN'S 23rd BIRTHDAY<br>PARTY + SLEEPOVER</span></strong>")
+        .start();
+</script>
+
 </html>

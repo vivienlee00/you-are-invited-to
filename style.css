@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'WinterDairy';
+    /*a name to be used later*/
+    src: url('WinterDairyShiny-vmoBM.ttf');
+    /*URL to font*/
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+
+@keyframes cssAnimation {
+    to {
+        visibility: visible;
+    }
+}
+
+.showMe {
+    animation: cssAnimation 0s 15s forwards;
+    visibility: hidden;
+}
+
+
+body {
+    background-color: #92b5d7;
+    color: white;
+    font-family: 'Josefin Slab', 'WinterDairy', serif;
+    text-align: center;
+    padding-top: 13vh;
+}
+
+span {
+    width: 60%;
+    margin: auto;
+    font-size: 6vh;
+}
+
+#welcome {
+    font-size: 6vh;
+}
+
+#cordially {
+    font-size: 6vh;
+}
+
+#banger {
+    font-size: 7vh;
+}
+
+#down {
+    width: unset !important;
+    position: fixed;
+    top: 82vh;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: #92b5d7;
+        color: white;
+        font-family: 'Josefin Slab', 'WinterDairy', serif;
+        text-align: center;
+    }
+
+    .text {
+        width: 90%;
+        margin: auto;
+        padding-top: 10vw;
+    }
+
+    .welcome {
+        font-size: 5vh;
+    }
+
+    .header {
+        width: 90%;
+        margin: auto;
+        padding-top: 10vw;
+        font-size: 5vh;
+    }
+}
