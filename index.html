@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Poppins&display=swap" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="app.js"></script>
     <script src="snowstorm.js"></script>
@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body id="body" onload="">
+<body id="body">
     <div id="app"></div>
     <a onclick="showContent()">
         <span id="down" class="bounce material-symbols-outlined">
@@ -26,7 +26,66 @@
         </span>
     </a>
     <div id="content">
-        djglk;asfjf giofradhjg iopaersjhrtuioevmuntioetuioretuvmnpioresmutioeutioreswmu
+        hiiiiiiiiiiiiiiiiiiiiiii :3
+        <br>
+        here's what you need to know:
+        <ul>
+            <li>saturday, february 25th @ 7:30pm</li>
+            <li>city club hotel: duplex suite</li>
+            <li>55 west 44th street</li>
+            <li style="color:rgb(200, 214, 225)">details are subject to change</li>
+            <br>
+            <li>!!! there is a theme for this party</li>
+            <li><b>WINTER WONDERLAND</b></li>
+            <br>
+            <li>if you are not dressed according to theme, the bouncer will not let you in!</li>
+            <li style="color:rgb(200, 214, 225)">((the bouncer is ME))</li>
+            <br>
+            <li>i have created an <a target="_blank" href="https://docs.google.com/presentation/d/1o4isPxr52R3KfHixSTaGSVcTGnIqd5w68w_aJkFAIkU/edit?usp=sharing">~OUTFIT GUIDE~</a> for you to follow</li>
+            <li>there are slides for both women and men!</li>
+            <li style="color:rgb(200, 214, 225)">so if you are a MAN yes you still need to be dressed to theme 🤍</li>
+            <br>
+            <li>don't stress about it too much! try your best to match the theme and dress to your comfort level! don't go out of your way buying new clothes for this <span style="color:rgb(200, 214, 225); font-size: 2vh;">((but by all means if you want to, go ahead 🤍))</span> !</li>
+            <li style="color:rgb(200, 214, 225)">just know that if it's clear that u didn't genuinely try to match the theme then you'll make me sad and ruin my birthday. do u rlly want to do that?</li>
+            <br>
+            <li>if you would like to sleepover as well please let me know! <span style="color:rgb(200, 214, 225); font-size: 2vh;">(rsvp below)</span> so i can have headcount! unfortunately i cannot have everyone sleepover bc 20 people sleeping in a single hotel room does not sound like a good idea :// but if u have a far trek home or really any reason <span style="color:rgb(200, 214, 225); font-size: 2vh;">(( u just want to spend more time with me 8] ))</span> just lmk and we can absolutely make things work!!</li>
+        </ul>
+        <br><br>
+        <table>
+            <tr>
+              <th>Party</th>
+              <th>Sleepover</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Italy</td>
+            </tr>
+        </table>          
+        <!-- <div id="slides">
+            <div class="google-slides-container">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQRiUofm229HhOKrxl6Nkdo1r4dhclo3qUe9cuVS8NKNwo7uviAcrjdCSUuOxVIirPyIurcUV9jEir7/embed?start=false&loop=true&delayms=10000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>    
+            </div>    
+        </div> -->
     </div>
 </body>
 
@@ -42,11 +101,11 @@
         .pauseFor(1000)
         .typeString('<br><br><br><span class="text" id="cordially">you are cordially invited to ...</span>')
         .pauseFor(1500)
-        .typeString("<br><br><br><strong><span class='text' id='banger'>VIVIEN'S 23rd BIRTHDAY<br>PARTY + SLEEPOVER</span></strong>")
+        .typeString("<br><br><br><strong><span class='text' id='banger'>VIVIEN'S 23RD<br>BIRTHDAY PARTY</span></strong>")
         .start();
 
-    function showContent(){
-        document.getElementById('body').style.minHeight = "200vh";
+    function showContent() {
+        document.getElementById('body').style.minHeight = "250vh";
         document.getElementById('content').style.display = "block";
         document.getElementById('content').scrollIntoView();
     }
