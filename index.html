@@ -8,12 +8,13 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Poppins&display=swap"
+        rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="app.js"></script>
     <script src="snowstorm.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <link rel="stylesheet"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -41,46 +42,39 @@
             <li>if you are not dressed according to theme, the bouncer will not let you in!</li>
             <li style="color:rgb(200, 214, 225)">((the bouncer is ME))</li>
             <br>
-            <li>i have created an <a target="_blank" href="https://docs.google.com/presentation/d/1o4isPxr52R3KfHixSTaGSVcTGnIqd5w68w_aJkFAIkU/edit?usp=sharing">~OUTFIT GUIDE~</a> for you to follow</li>
+            <li>i have created an <a target="_blank"
+                    href="https://docs.google.com/presentation/d/1o4isPxr52R3KfHixSTaGSVcTGnIqd5w68w_aJkFAIkU/edit?usp=sharing">~OUTFIT
+                    GUIDE~</a> for you to follow !! IMPORTANT</li>
             <li>there are slides for both women and men!</li>
             <li style="color:rgb(200, 214, 225)">so if you are a MAN yes you still need to be dressed to theme 🤍</li>
             <br>
-            <li>don't stress about it too much! try your best to match the theme and dress to your comfort level! don't go out of your way buying new clothes for this <span style="color:rgb(200, 214, 225); font-size: 2vh;">((but by all means if you want to, go ahead 🤍))</span> !</li>
-            <li style="color:rgb(200, 214, 225)">just know that if it's clear that u didn't genuinely try to match the theme then you'll make me sad and ruin my birthday. do u rlly want to do that?</li>
+            <li>don't stress about it too much! try your best to match the theme and dress to your comfort level! don't
+                go out of your way buying new clothes for this <span
+                    style="color:rgb(200, 214, 225); font-size: 1.8vh;">((but by all means if you want to, go ahead
+                    🤍))</span> !</li>
+            <li style="color:rgb(200, 214, 225)">just know that if it's clear that u didn't genuinely try to match the
+                theme then you'll make me sad and ruin my birthday. do u rlly want to do that?</li>
             <br>
-            <li>if you would like to sleepover as well please let me know! <span style="color:rgb(200, 214, 225); font-size: 2vh;">(rsvp below)</span> so i can have headcount! unfortunately i cannot have everyone sleepover bc 20 people sleeping in a single hotel room does not sound like a good idea :// but if u have a far trek home or really any reason <span style="color:rgb(200, 214, 225); font-size: 2vh;">(( u just want to spend more time with me 8] ))</span> just lmk and we can absolutely make things work!!</li>
+            <li>if you would like to sleepover as well please let me know! <span
+                    style="color:rgb(200, 214, 225); font-size: 1.8vh;">(rsvp below)</span> so i can have headcount!
+                unfortunately i cannot have everyone sleepover bc 20 people sleeping in a single hotel room does not
+                sound like a good idea :// but if u have a far trek home or really any reason <span
+                    style="color:rgb(200, 214, 225); font-size: 1.8vh;">(( u just want to spend more time with me 8]
+                    ))</span> just lmk and we can absolutely make things work!!</li>
+            <br>
+            <li>EVERYONE: please eat dinner beforehand!</li>
+            <li>SLEEPOVER: please bring PJs! i will be bringing a few too but any throw blankets, snacks, games, sheet masks would really help!</li>
         </ul>
-        <br><br>
-        <table>
-            <tr>
-              <th>Party</th>
-              <th>Sleepover</th>
-            </tr>
-            <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
-            </tr>
-            <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-            </tr>
-            <tr>
-              <td>Ernst Handel</td>
-              <td>Roland Mendel</td>
-            </tr>
-            <tr>
-              <td>Island Trading</td>
-              <td>Helen Bennett</td>
-            </tr>
-            <tr>
-              <td>Laughing Bacchus Winecellars</td>
-              <td>Yoshi Tannamuri</td>
-            </tr>
-            <tr>
-              <td>Magazzini Alimentari Riuniti</td>
-              <td>Italy</td>
-            </tr>
-        </table>          
+        <span style="font-size:3.5vh;">rsvp here:</span>
+        <form name="submit-to-google-sheet">
+            <input style="border-width: 0px;border-radius: 3px;" name="name" type="text"
+                placeholder="please enter your name" required><br>
+            <input name="party" type="checkbox" value="yes">
+            <label for="party">attending party?</label>
+            <input name="sleepover" type="checkbox" value="yes">
+            <label for="party">sleeping over?</label><br>
+            <button id="rsvpButton" class="button-8" onclick="buttonFeedback()" type="submit">rsvp</button>
+        </form>
         <!-- <div id="slides">
             <div class="google-slides-container">
                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQRiUofm229HhOKrxl6Nkdo1r4dhclo3qUe9cuVS8NKNwo7uviAcrjdCSUuOxVIirPyIurcUV9jEir7/embed?start=false&loop=true&delayms=10000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>    
@@ -90,11 +84,16 @@
 </body>
 
 <script>
+    //reference: https://github.com/jamiewilson/form-to-google-sheets
+    //https://script.google.com/u/0/home/projects/1gfARjfTH0jMyY6F8zq5A8AAuNBwP-AanPRSWrO2P21zPEP-285oYmcNC/executions
+    //https://docs.google.com/spreadsheets/d/1x_BVCvLYCcSKmd6UF2LviYfAv2w-MNavxY9nQUtSoRM/edit#gid=0
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzY56-eA3ay2W5t7NaifdEZr1v_fnLn7-4g58SNIYB_d5bZ3uy5cB2sjmOozVx6MLNBmg/exec';
     var app = document.getElementById('app');
     var typewriter = new Typewriter(app, {
         loop: false,
         delay: 100,
     });
+
     typewriter
         .pauseFor(300)
         .typeString('<span class="text" id="welcome">welcome ! ... ♥</span>')
@@ -105,9 +104,25 @@
         .start();
 
     function showContent() {
-        document.getElementById('body').style.minHeight = "250vh";
+        document.getElementById('body').style.minHeight = "185vh";
         document.getElementById('content').style.display = "block";
         document.getElementById('content').scrollIntoView();
+    }
+
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+
+    function buttonFeedback() {
+        document.getElementById('rsvpButton').innerHTML = '<span id="loading-section" style="font-size:1.9vh;"><i class="fa fa-spinner fa-spin fa-fw"></i> saving...</span>';
+        setInterval(function () {
+            document.getElementById('rsvpButton').innerHTML = 'saved ✔';
+        }, 2500)
     }
 </script>
 
