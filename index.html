@@ -104,7 +104,12 @@
         .start();
 
     function showContent() {
-        document.getElementById('body').style.minHeight = "185vh";
+        var isMobile = navigator.userAgent.match(/mobile|opera m(ob|in)/i);
+        if (!isMobile){
+            document.getElementById('body').style.minHeight = "185vh";
+        } else {
+            document.getElementById('body').style.minHeight = "250vh";
+        }
         document.getElementById('content').style.display = "block";
         document.getElementById('content').scrollIntoView();
     }
