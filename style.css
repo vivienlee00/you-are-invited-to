@@ -231,11 +231,15 @@ ul {
         padding-left: 10vw;
         padding-right: 10vw;
         padding-top: 3vh;
-        margin-top: 37vh;
+        margin-top: 46vh;
         width: 80vw;
-        font-size: 1.8vh !important;
+        font-size: 1.9vh !important;
         font-family: 'Poppins', sans-serif;
     }    
+
+    #content span {
+        font-size: 1.9vh !important;
+    }
     
     #content ul {
         text-align: left;
